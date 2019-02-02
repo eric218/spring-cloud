@@ -1,0 +1,35 @@
+server:
+  port: 8002
+device-server:
+  netty:
+    port: 9999
+  unionpay:
+    localNap.ip: 192.168.1.198
+    remote.ip: 101.231.114.192
+    remote.port: 45562
+spring:
+  profiles: dev
+  application:
+    name: start_device_server1
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@61.183.232.58:8521:oraletest
+    username: iafc_dev
+    password: iafc123
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  typeAliasesPackage: cn.wimetro
+logging:
+#  level:
+#    com.baomidou.mybatisplus.samples: debug
+#  file: E:\myserver\log\cloudLog.log
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+#  instance:
+#    # 每间隔1s，向服务端发送一次心跳，证明自己依然”存活“
+#    lease-renewal-interval-in-seconds: 1
+#    # 告诉服务端，如果我2s之内没有给你发心跳，就代表我“死”了，将我踢出掉。
+#    lease-expiration-duration-in-seconds: 2
+

@@ -1,0 +1,29 @@
+server:
+  port: 8011
+device-server:
+  netty:
+    port: 9999
+  unionpay:
+    localNap.ip: 172.16.100.104
+    remote.ip: 9.234.3.193
+    remote.port: 56242
+spring:
+  application:
+    name: start_device_server
+  profiles: 104
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@172.16.100.104:1521:oraletest
+    username: iafc_dev
+    password: iafc123
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  typeAliasesPackage: cn.wimetro
+#logging:
+#  level:
+#    com.baomidou.mybatisplus.samples: debug
+#  file: /home/wimtero/yl_dev/logs/app.logs
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.16.100.104:8100/eureka/

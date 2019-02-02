@@ -1,6 +1,6 @@
 package cn.wimetro.service.impl;
 
-import cn.wimetro.constants.LYstatic;
+import cn.wimetro.constants.Ylstatic;
 import cn.wimetro.mapper.YlPreAuthReqMapper;
 import cn.wimetro.pos.ISOF;
 import cn.wimetro.pos.PKGResult;
@@ -45,7 +45,7 @@ public class SignServiceImpl implements SignService {
         log.info(LogFormatUnit.setLevelOne("银联签到开始"));
 
         //银联的标志位是0开始签到 必要条件
-        LYstatic.QIANDAO_FLAG="00";
+        Ylstatic.QIANDAO_FLAG="00";
 
         //读取配置文件
         Map configMap = ylOptionConfigService.load8583Config();
