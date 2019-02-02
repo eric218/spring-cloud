@@ -12,6 +12,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2019-01-08
  */
 public interface YlPreAuthReqService extends IService<YlPreAuthReq> {
-
+    /**
+     * 获取序列值
+     * @author wangwei
+     * @date  2019/01/08
+     * @param
+     * @return
+     **/
+    int selectLine01Seq();
 
 }

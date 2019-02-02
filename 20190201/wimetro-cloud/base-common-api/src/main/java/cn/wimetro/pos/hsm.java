@@ -150,7 +150,7 @@ public class hsm {
 	}
 	
 	//国密计算MAC
-	public byte[] calcSMMAC(byte[] MACK, byte[] data)
+	public byte[] calcSMMAC(byte[] mack, byte[] data)
 	{
 		byte[] err ={0x45,0x2F};
 		try {
@@ -173,7 +173,7 @@ public class hsm {
 			
 			System.arraycopy(cmd,0,cmdData,0,8);
 			//MACK 
-			System.arraycopy(MACK,0,cmdData,8,16);
+			System.arraycopy(mack,0,cmdData,8,16);
 			//初始向量
 			byte[] tmp = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 			System.arraycopy(tmp,0,cmdData,24,16);
@@ -579,7 +579,7 @@ public class hsm {
 	}	
 	
 	//计算MAC
-	public byte[] calcMAC(byte[] MACK, byte[] data)
+	public byte[] calcMAC(byte[] mack, byte[] data)
 	{
 		byte[] err ={0x45,0x2F};
 		try {
@@ -600,7 +600,7 @@ public class hsm {
 			
 			System.arraycopy(cmd,0,cmdData,0,7);
 			//MACK 
-			System.arraycopy(MACK,0,cmdData,7,16);
+			System.arraycopy(mack,0,cmdData,7,16);
 			//初始向量
 			byte[] tmp = {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 			System.arraycopy(tmp,0,cmdData,23,8);

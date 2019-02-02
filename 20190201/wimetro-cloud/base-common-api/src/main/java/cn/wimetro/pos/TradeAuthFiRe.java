@@ -49,7 +49,9 @@ public class TradeAuthFiRe
 		//替换二磁道数据的"="
 		for(int i=0; i<bIn_Mag2.length; i++)
 		{
-			if( bIn_Mag2[i] == (byte)61 ) bIn_Mag2[i] = (byte)68;
+			if( bIn_Mag2[i] == (byte)61 ) {
+				bIn_Mag2[i] = (byte)68;
+			}
 		}
 
 		//报文头
@@ -82,7 +84,7 @@ public class TradeAuthFiRe
 		trade_rq.setField(60, bBatNo2);        //060:自定义数据
 		trade_rq.setField(61, bIn_Ori);        //061:原始信息
 		trade_rq.setField(64, tmpMacMap);      //064:MAC,需要计算MAC域的包,要先置一个临时位图,以得到占位标识, 其实际值在组包的时候计算附加到包后
-		trade_rq.ConditionProc();
+		trade_rq.conditionProc();
 
 		//组包
 		return trade_rq.seal();
@@ -90,14 +92,16 @@ public class TradeAuthFiRe
 
 	/**
 	 *   解包
-	 * @param pPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
+	 * @param pbPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
 	 */
 	public PKGResult unseal(byte pbPkg[])
 	{
 		PKGResult res;
 
 		res = trade_rs.unseal( pbPkg );
-		if( res.iResult < 0 ) return res;
+		if( res.iResult < 0 ) {
+			return res;
+		}
 
 		//置需要给出的特殊数据,需要定义对应的变量来存储
 		//1:解63域的国际信用卡公司代码

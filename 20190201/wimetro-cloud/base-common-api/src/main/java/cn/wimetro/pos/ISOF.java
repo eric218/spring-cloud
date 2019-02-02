@@ -141,13 +141,13 @@ public class ISOF
 	 			e.printStackTrace();	
 	 		}
 	 		
-	 		long between_secs = (time2 - time1)/1000;
+	 		long betweenSecs = (time2 - time1)/1000;
 	 		System.out.println("时间差:");
 	 		System.out.println(String.valueOf(gDateTime));	
 	 		System.out.println(String.valueOf(endTime));	
-	 		System.out.println(String.valueOf(between_secs));	
+	 		System.out.println(String.valueOf(betweenSecs));
 	 		
-	 		if(between_secs <= 180)//窗口期时间
+	 		if(betweenSecs <= 180)//窗口期时间
 	 		{
 	 			return true;
 	 		}
@@ -210,7 +210,7 @@ public class ISOF
 	 */
     public static byte[] HexStr_Bytes(String hexString, int piBCDFill)
     {
-        if (hexString == null || hexString.equals("")) 
+        if (hexString == null || ("").equals(hexString))
         {
       	   return null;
         }

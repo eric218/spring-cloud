@@ -249,11 +249,11 @@ public class ISO8583
 	/**
 	 *   条件域处理
 	 */
-	public void ConditionProc()
+	public void conditionProc()
 	{
 		for(int i=0; i<(ISOF.iFields+5); i++)
 		{
-			fields[i].ConditionProc();
+			fields[i].conditionProc();
 		}
 	}
 
@@ -310,9 +310,9 @@ public class ISO8583
 					byte[] bMac = tHsm.generateSMMac(ISOF.gMACK, dataMac);
 					//System.out.print("数据生成的bMac为：");
 					//System.out.println(ISOF.Bytes_HexStr(bMac));
-					byte[] field_64 = new byte[8];
-					System.arraycopy(bMac,0,field_64,0,8);
-					setField(64,field_64);	
+					byte[] field64 = new byte[8];
+					System.arraycopy(bMac,0,field64,0,8);
+					setField(64,field64);
 					//组合mac
 					byte bSealPkg2[]=new byte[b2.length+8];
 					System.arraycopy(b2,0,bSealPkg2,0,b2.length);
@@ -404,7 +404,7 @@ public class ISO8583
 			byte[] macKcheck = new byte[4];
 			
 			String f603 = ISOF.Bytes_HexStr(getFieldY(60)).substring(8,11);
-			if(f603.equals("101") && ISOF.Bytes_HexStr(getY(3)).equals("0800"))
+			if(("101").equals(f603) && ("0800").equals(ISOF.Bytes_HexStr(getY(3))))
 			{
 				System.arraycopy(f62,0,macK,0,16);
 				//测试环境格式

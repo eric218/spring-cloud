@@ -81,7 +81,7 @@ public class TradeAuth
 		trade_rq.setField(55, bIn_IC);         //055:IC卡数据
 		trade_rq.setField(60, field_60);       //060:自定义数据
 		trade_rq.setField(64, tmpMacMap);      //064:MAC,需要计算MAC域的包,要先置一个临时位图,以得到占位标识, 其实际值在组包的时候计算附加到包后
-		trade_rq.ConditionProc();
+		trade_rq.conditionProc();
 
 		//组包
 		return trade_rq.seal();

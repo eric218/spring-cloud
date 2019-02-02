@@ -4,6 +4,7 @@ import cn.wimetro.entity.YlPreAuthReq;
 import cn.wimetro.mapper.YlPreAuthReqMapper;
 import cn.wimetro.service.YlPreAuthReqService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,5 +17,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class YlPreAuthReqServiceImpl extends ServiceImpl<YlPreAuthReqMapper, YlPreAuthReq> implements YlPreAuthReqService {
-
+    @Override
+    public int selectLine01Seq() {
+        return this.selectLine01Seq();
+    }
 }

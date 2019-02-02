@@ -325,7 +325,9 @@ public class ISO8583Field
 	public int unformat(int piStart, byte pbPkg[])
 	{
 		//1:判断与是否存在
-		if( iMapFlag == ISOF.MAP_N ) return 0;   //域不存在
+		if( iMapFlag == ISOF.MAP_N ) {
+			return 0;   //域不存在
+		}
 		//判断是否定长类型
 		if( ISOF.FIXED == iLenType )  //如果是定长类型
 		{
@@ -575,7 +577,7 @@ public class ISO8583Field
 	/**
 	 *   条件域处理
 	 */
-	public void ConditionProc()
+	public void conditionProc()
 	{
 		if( ISOF.USE_RQ == iRQRS )   //请求包,才执行条件域处理
 		{

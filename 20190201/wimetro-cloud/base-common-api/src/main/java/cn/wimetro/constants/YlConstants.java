@@ -2,15 +2,23 @@ package cn.wimetro.constants;
 
 import java.math.BigDecimal;
 
+
 /**
- * 
- * <pre>
- * Title:常量类
- * Description: 银联的常量类
- * </pre>
- * 
- */
+ *
+ * @author wangwei
+ * @date  2019-02-02
+ **/
 public class YlConstants {
+
+	/**
+	 * 联机标识 联机
+	 */
+	public static String YL_RETURN_00="00";
+
+	/**
+	 * 联机标识 联机
+	 */
+	public static int YL_FIELD_39= 39;
 
 	/**
 	 * 联机标识 联机
@@ -120,6 +128,11 @@ public class YlConstants {
 	public static String REC_FLAG_CANCLE="1";
 
 	/**
+	 * 预授权记录状态 闪卡放行过
+	 */
+	public static String REC_FLAG_IS_IN_AGAIN="3";
+
+	/**
 	 * 预授权完成记录状态 原始交易
 	 */
 	public static String REC_FLAG_FINISH_INIT="0";
@@ -153,6 +166,10 @@ public class YlConstants {
 	 * 匹配标识 撤销
 	 */
 	public static String MATCH_FLAG_CANCEL="03";
+	/**
+	 * 匹配标识 进站单边
+	 */
+	public static String MATCH_FLAG_IN_SIDE="13";
 
 	/**
 	 * 匹配数据来源 进站数据
@@ -165,14 +182,24 @@ public class YlConstants {
 	public static String MATCH_SRC_UPDATE="1";
 
 	/**
+	 * 是否超时 是
+	 */
+	public static String IS_OVER_TIME_YES = "0";
+
+	/**
+	 * 是否超时 否
+	 */
+	public static String IS_OVER_TIME_NO = "1";
+
+	/**
 	 * 超时时间
 	 */
-	public static int OVER_TIME = 10000000;
+	public static int OVER_TIME = 180;
 
 	/**
 	 * 超时罚金
 	 */
-	public static BigDecimal OVER_FEE = new BigDecimal(3);
+	public static BigDecimal OVER_FEE = new BigDecimal(11);
 
 	/**
 	 * 白名单 是
@@ -191,5 +218,34 @@ public class YlConstants {
 	 * 匹配结果未返回给读头
 	 */
 	public static String READER_FLAG_NO = "1";
+	/**
+	 * 银联赔付标记 赔付
+	 */
+	public static String YL_PAY_FLAG_YES= "1";
+	/**
+	 * 银联赔付标记 不赔付
+	 */
+	public static String YL_PAY_FLAG_NO= "0";
+
+	/**
+	 * 异常种类 超过三天ODA出站
+	 */
+	public static String EXCEPL_TYPE_OVERTIME="1";
+	/**
+	 * 异常种类 三天内ODA出站，并且无进站匹配
+	 */
+	public static String EXCEPL_TYPE_INTIME="0";
+	/**
+	 * 异常种类 进站单边
+	 */
+	public static String EXCEPL_TYPE_ONLY_IN="2";
+	/**
+	 *  BOM进站更新
+	 */
+	public static String BOM_UPDATE_IN="1";
+	/**
+	 *  BOM出站更新
+	 */
+	public static String BOM_UPDATE_OUT="2";
 	
 }

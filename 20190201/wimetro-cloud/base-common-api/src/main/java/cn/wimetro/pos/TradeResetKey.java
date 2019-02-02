@@ -1,4 +1,5 @@
 package cn.wimetro.pos;
+
 public class TradeResetKey
 {
 	public  byte[] bIn_Date={0};      		//输入时间MMDDhhmmss
@@ -47,9 +48,8 @@ public class TradeResetKey
 	
 	
 	/**
-	 *   解包
-	 * @param pPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
-	 * @param piPring,      打印输出信息设置, 1-打印域反格式化后的数据, 2-打印域的原始数据(未反格式化, 不包括变长长度), 3-都打印
+	 *   解包 打印输出信息设置, 1-打印域反格式化后的数据, 2-打印域的原始数据(未反格式化, 不包括变长长度), 3-都打印
+	 * @param pbPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
 	 * @return PKGResult,   iResult存放错误代码
 	 */
 	public PKGResult unseal(byte pbPkg[])

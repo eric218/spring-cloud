@@ -1,6 +1,10 @@
 package cn.wimetro.service;
 
-
+/**
+ *
+ * @author wangwei
+ * @date  2019-02-02
+ **/
 public interface SignService {
 
     /**
@@ -10,7 +14,7 @@ public interface SignService {
      * @param
      * @return
      **/
-    public void doSign();
+    void doSign();
 
     /**
      * 读取配置文件
@@ -19,5 +23,5 @@ public interface SignService {
      * @param
      * @return
      **/
-    public void doInit();
+    void doInit();
 }

@@ -35,8 +35,7 @@ public class TradeRefund
 
 	/**
  
-	 *   组包
-	 * @param piPring,     打印输出信息设置, 1-打印域未格式化之前的数据, 2-打印格式化之后的数据, 3-都打印
+	 *   组包打印输出信息设置, 1-打印域未格式化之前的数据, 2-打印格式化之后的数据, 3-都打印
 	 */
 	public PKGResult seal()
 	{
@@ -48,7 +47,9 @@ public class TradeRefund
 		//替换二磁道数据的"="
 		for(int i=0; i<bIn_Mag2.length; i++)
 		{
-			if( bIn_Mag2[i] == (byte)61 ) bIn_Mag2[i] = (byte)68;
+			if( bIn_Mag2[i] == (byte)61 ) {
+				bIn_Mag2[i] = (byte)68;
+			}
 		}
 
 		//报文头
@@ -79,7 +80,7 @@ public class TradeRefund
 		//trade_rq.setField(62, );             //062:自定义数据
 		trade_rq.setField(63, bIn_CCCCode);    //063:自定义数据
 		trade_rq.setField(64, tmpMacMap);      //064:MAC,需要计算MAC域的包,要先置一个临时位图,以得到占位标识, 其实际值在组包的时候计算附加到包后
-		trade_rq.ConditionProc();
+		trade_rq.conditionProc();
 
 		//组包
 		return trade_rq.seal();
@@ -88,14 +89,16 @@ public class TradeRefund
 	/**
  
 	 *   解包
-	 * @param pPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
+	 * @param pbPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
 	 */
 	public PKGResult unseal(byte pbPkg[])
 	{
 		PKGResult res;
 
 		res = trade_rs.unseal( pbPkg );
-		if( res.iResult < 0 ) return res;
+		if( res.iResult < 0 ) {
+			return res;
+		}
 
 		//置需要给出的特殊数据,需要定义对应的变量来存储
 

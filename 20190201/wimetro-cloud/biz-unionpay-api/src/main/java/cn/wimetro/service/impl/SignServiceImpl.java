@@ -1,5 +1,6 @@
 package cn.wimetro.service.impl;
 
+import cn.wimetro.constants.YlConstants;
 import cn.wimetro.constants.Ylstatic;
 import cn.wimetro.mapper.YlPreAuthReqMapper;
 import cn.wimetro.pos.ISOF;
@@ -10,6 +11,7 @@ import cn.wimetro.remotecall.ConnManager;
 import cn.wimetro.remotecall.MessageVO;
 import cn.wimetro.service.SignService;
 import cn.wimetro.service.YlOptionConfigService;
+import cn.wimetro.service.YlPreAuthReqService;
 import cn.wimetro.unit.DateUtil;
 import cn.wimetro.unit.LogFormatUnit;
 import cn.wimetro.unit.NumberUtil;
@@ -35,7 +37,7 @@ import java.util.concurrent.TimeoutException;
 public class SignServiceImpl implements SignService {
 
     @Autowired
-    YlPreAuthReqMapper ylPreAuthReqMapper;
+    YlPreAuthReqService ylPreAuthReqService;
 
     @Autowired
     YlOptionConfigService ylOptionConfigService;
@@ -57,12 +59,13 @@ public class SignServiceImpl implements SignService {
         PKGResult res;
         TradeLogin login = new TradeLogin();
         //交易日期时间, 10字节
-        login.bIn_Date     = new String(DateUtil.getDateTimeNew().substring(4,DateUtil.getDateTimeNew().length())).getBytes();
-        int number = ylPreAuthReqMapper.selectLine01Seq();
-        String tradeNo = new String(NumberUtil.getTradeNo(number));
+        String binDate = DateUtil.getDateTimeNew();
+        login.bIn_Date     = binDate.substring(4,binDate.length()).getBytes();
+        int number = ylPreAuthReqService.selectLine01Seq();
+        String tradeNo = NumberUtil.getTradeNo(number);
         //闸机的交易流水号, 6字节
         login.bIn_TradeNo  = tradeNo.getBytes();
-        login.bIn_BatNo    = new String("000008").getBytes();
+        login.bIn_BatNo    = "000008".getBytes();
         res = login.seal();
         if( res.iResult < 0 )
         {
@@ -95,7 +98,7 @@ public class SignServiceImpl implements SignService {
             return;
         }
 
-        if((new String(login.getField(39))).equals("00"))
+        if(YlConstants.YL_RETURN_00.equals(new String(login.getField(YlConstants.YL_FIELD_39))))
         {
             log.info("-----银联申请密钥重置返回00成功-----");
             vo = new MessageVO();
@@ -104,10 +107,10 @@ public class SignServiceImpl implements SignService {
                 res.bResult = resTemp.bResult;
 
                 //银行密钥重置
-                PKGResult res_0810 = resetKey(res.bResult);
+                PKGResult res0810 = resetKey(res.bResult);
 
                 vo.setKey("QD003");
-                vo.setMsgBody(res_0810.bResult);
+                vo.setMsgBody(res0810.bResult);
 
                 //直接发送银行 不需要返回值
                 ConnManager.getInstance().sendMsg(vo);
@@ -118,7 +121,7 @@ public class SignServiceImpl implements SignService {
                 ConnManager.getInstance().getWaitSet().removeWaitResult(vo.getKey());
             }
 
-            Map map = new HashMap();
+            Map map = new HashMap(16);
 
             map.put("gMACK", ISOF.Bytes_HexStr(ISOF.gMACK));
             map.put("gMACK_bak", ISOF.Bytes_HexStr(ISOF.gMACK_bak));
@@ -175,7 +178,7 @@ public class SignServiceImpl implements SignService {
                 else
                 {
                     retCode = (new String("00")).getBytes();
-                    //retCode = (new String("B1")).getBytes();
+                    //retCode = (new String("B1")).getBytes()
                 }
             }
 
@@ -208,7 +211,7 @@ public class SignServiceImpl implements SignService {
 
 
     public Map sendAutPreMessage(MessageVO vo){
-        Map map = new HashMap();
+        Map map = new HashMap(16);
         ConnManager.getInstance().sendMsg(vo);
         PKGResult res1 =new PKGResult();
         PKGResult res2 =new PKGResult();

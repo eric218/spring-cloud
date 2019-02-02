@@ -1,5 +1,6 @@
 package cn.wimetro.service.impl;
 
+import cn.wimetro.constants.Ylstatic;
 import cn.wimetro.entity.YlOptionConfig;
 import cn.wimetro.mapper.YlOptionConfigMapper;
 import cn.wimetro.pos.ISOF;
@@ -10,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,9 +29,13 @@ public class YlOptionConfigServiceImpl extends ServiceImpl<YlOptionConfigMapper,
 
     @Override
     public Map load8583Config() {
-        Map map = new HashMap(16);
+        Map map = new LinkedHashMap();
         List<YlOptionConfig> list = this.list(null);
         for(YlOptionConfig config : list){
+            if(("DEV_PRO").equals(config.getCodeCode())){
+                Ylstatic.DEV_PRO = config.getCodeValue();
+                map.put("DEV_PRO",config.getCodeValue());
+            }
             if(("gMACK").equals(config.getCodeCode())){
                 ISOF.gMACK = ISOF.HexStr_Bytes(config.getCodeValue(),0);
                 map.put("gMACK",config.getCodeValue());
@@ -73,6 +79,21 @@ public class YlOptionConfigServiceImpl extends ServiceImpl<YlOptionConfigMapper,
             if(("gMoney_code").equals(config.getCodeCode())){
                 ISOF.gMoney_code = config.getCodeValue();
                 map.put("gMoney_code",config.getCodeValue());
+            }
+
+            if(("PRE_AUTH_OVER_TIME").equals(config.getCodeCode())){
+                Ylstatic.PRE_AUTH_OVER_TIME = config.getCodeValue();
+                map.put("PRE_AUTH_OVER_TIME",config.getCodeValue());
+            }
+
+            if(("PRE_AUTH_DEAL_TIME").equals(config.getCodeCode())){
+                Ylstatic.PRE_AUTH_DEAL_TIME = config.getCodeValue();
+                map.put("PRE_AUTH_DEAL_TIME",config.getCodeValue());
+            }
+
+            if(("HIGH_PRICE").equals(config.getCodeCode())){
+                Ylstatic.HIGH_PRICE = config.getCodeValue();
+                map.put("HIGH_PRICE",config.getCodeValue());
             }
         }
         return map;

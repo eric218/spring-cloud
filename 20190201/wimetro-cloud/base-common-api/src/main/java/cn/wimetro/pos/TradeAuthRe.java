@@ -1,9 +1,11 @@
 package cn.wimetro.pos;
-
 /**
  * 预授权撤销
- */
-
+ * @author wangwei
+ * @date  2019-02-02
+ * @param
+ * @return
+ **/
 public class TradeAuthRe
 {
 	//输入参数，set
@@ -83,7 +85,7 @@ public class TradeAuthRe
 		trade_rq.setField(60, bBatNo2);        //060:自定义数据
 		trade_rq.setField(61, bIn_Ori);        //061:原始信息
 		trade_rq.setField(64, tmpMacMap);      //064:MAC,需要计算MAC域的包,要先置一个临时位图,以得到占位标识, 其实际值在组包的时候计算附加到包后
-		trade_rq.ConditionProc();
+		trade_rq.conditionProc();
 
 		//组包
 		return trade_rq.seal();
@@ -91,7 +93,7 @@ public class TradeAuthRe
 
 	/**
 	 *   解包
-	 * @param pPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
+	 * @param pbPkg,         需要解包的数据, 从TPDU-MAC的数据, 不包括长度
 	 */
 	public PKGResult unseal(byte pbPkg[])
 	{

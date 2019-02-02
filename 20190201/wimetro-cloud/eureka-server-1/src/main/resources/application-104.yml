@@ -5,13 +5,11 @@ spring:
     name: eureka-server
   profiles: 104
 eureka:
-  instance:
-    hostname: 127.0.0.1
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
   server:
     #关闭自我保护
     enable-self-preservation: false
