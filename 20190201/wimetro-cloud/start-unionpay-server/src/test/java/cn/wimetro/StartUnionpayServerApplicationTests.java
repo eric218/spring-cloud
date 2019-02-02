@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BaseCommonInterfaceApplicationTests {
+public class StartUnionpayServerApplicationTests {
 
     @Test
     public void contextLoads() {
