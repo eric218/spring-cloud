@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wimetro.mapper.YlPreAuthReqMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wimetro.entity.YlPreAuthReq">
+        <id column="EVENT_NO" property="eventNo" />
+        <result column="SAVE_TIME" property="saveTime" />
+        <result column="DEAL_TYPE" property="dealType" />
+        <result column="B2_AC_NO" property="b2AcNo" />
+        <result column="B3_PROCOD" property="b3Procod" />
+        <result column="B4_AMT" property="b4Amt" />
+        <result column="B11_SEQNO" property="b11Seqno" />
+        <result column="B12_TXNTM" property="b12Txntm" />
+        <result column="B13_TXNDT" property="b13Txndt" />
+        <result column="B14_EXPDATE" property="b14Expdate" />
+        <result column="B15_ACC_DT" property="b15AccDt" />
+        <result column="B37_SREFNO" property="b37Srefno" />
+        <result column="B38_AUTCOD_REC" property="b38AutcodRec" />
+        <result column="B39_RESPCOD_REC" property="b39RespcodRec" />
+        <result column="B41_TERM_NO" property="b41TermNo" />
+        <result column="B42_MERCT_CODE" property="b42MerctCode" />
+        <result column="B44_REC_ORG" property="b44RecOrg" />
+        <result column="B55_IC" property="b55Ic" />
+        <result column="B60_US1_MSG_ID" property="b60Us1MsgId" />
+        <result column="B60_US2_MSG_BTH" property="b60Us2MsgBth" />
+        <result column="B60_US3_NET_INFO_NO" property="b60Us3NetInfoNo" />
+        <result column="B62_REC_ORG" property="b62RecOrg" />
+        <result column="B63_US1_MSG_ID" property="b63Us1MsgId" />
+        <result column="REC_FLAG" property="recFlag" />
+        <result column="REQ_TIME" property="reqTime" />
+        <result column="REQ_FINISH_TIME" property="reqFinishTime" />
+        <result column="REQ_FLAG" property="reqFlag" />
+        <result column="SPLIT_TIME" property="splitTime" />
+        <result column="B61_US1_ORI_BTH" property="b61Us1OriBth" />
+        <result column="B61_US2_ORI_WAT" property="b61Us2OriWat" />
+        <result column="B61_US3_ORI_DATE" property="b61Us3OriDate" />
+        <result column="ORG_EVENT_NO" property="orgEventNo" />
+        <result column="MATCH_FLAG" property="matchFlag" />
+        <result column="MATCH_TIME" property="matchTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EVENT_NO, SAVE_TIME, DEAL_TYPE, B2_AC_NO, B3_PROCOD, B4_AMT, B11_SEQNO, B12_TXNTM, B13_TXNDT, B14_EXPDATE, B15_ACC_DT, B37_SREFNO, B38_AUTCOD_REC, B39_RESPCOD_REC, B41_TERM_NO, B42_MERCT_CODE, B44_REC_ORG, B55_IC, B60_US1_MSG_ID, B60_US2_MSG_BTH, B60_US3_NET_INFO_NO, B62_REC_ORG, B63_US1_MSG_ID, REC_FLAG, REQ_TIME, REQ_FINISH_TIME, REQ_FLAG, SPLIT_TIME, B61_US1_ORI_BTH, B61_US2_ORI_WAT, B61_US3_ORI_DATE, ORG_EVENT_NO, MATCH_FLAG, MATCH_TIME
+    </sql>
+    <select id="selectLine01Seq" resultType="java.lang.Integer">
+        select line01_seq.nextval from dual
+    </select>
+
+</mapper>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wimetro.mapper.YlDealInMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wimetro.entity.YlDealIn">
+        <id column="EVENT_NO" property="eventNo" />
+        <result column="SAVE_TIME" property="saveTime" />
+        <result column="DEAL_DEVICE_CODE" property="dealDeviceCode" />
+        <result column="DEAL_SEQ_GROUP_NO" property="dealSeqGroupNo" />
+        <result column="DEAL_SEQ_NO" property="dealSeqNo" />
+        <result column="DEAL_STATION" property="dealStation" />
+        <result column="DEAL_TYPE" property="dealType" />
+        <result column="MAIN_TYPE" property="mainType" />
+        <result column="SUB_TYPE" property="subType" />
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="SAM_CODE" property="samCode" />
+        <result column="LOGICAL_CODE" property="logicalCode" />
+        <result column="READ_COUNT" property="readCount" />
+        <result column="DEAL_AMOUNT" property="dealAmount" />
+        <result column="BALANCE" property="balance" />
+        <result column="DEAL_TIME" property="dealTime" />
+        <result column="TAC" property="tac" />
+        <result column="OPERATION_DATE" property="operationDate" />
+        <result column="DEAL_MODE" property="dealMode" />
+        <result column="REC_FLAG" property="recFlag" />
+        <result column="MATCH_FLAG" property="matchFlag" />
+        <result column="MATCH_TIME" property="matchTime" />
+        <result column="ACC_FLAG" property="accFlag" />
+        <result column="ACC_FILE_NAME" property="accFileName" />
+        <result column="ACC_FILE_TIME" property="accFileTime" />
+        <result column="ACC_FILE_LINE_CODE" property="accFileLineCode" />
+        <result column="SPLIT_TIME" property="splitTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EVENT_NO, SAVE_TIME, DEAL_DEVICE_CODE, DEAL_SEQ_GROUP_NO, DEAL_SEQ_NO, DEAL_STATION, DEAL_TYPE, MAIN_TYPE, SUB_TYPE, AREA_CODE, SAM_CODE, LOGICAL_CODE, READ_COUNT, DEAL_AMOUNT, BALANCE, DEAL_TIME, TAC, OPERATION_DATE, DEAL_MODE, REC_FLAG, MATCH_FLAG, MATCH_TIME, ACC_FLAG, ACC_FILE_NAME, ACC_FILE_TIME, ACC_FILE_LINE_CODE, SPLIT_TIME
+    </sql>
+
+</mapper>

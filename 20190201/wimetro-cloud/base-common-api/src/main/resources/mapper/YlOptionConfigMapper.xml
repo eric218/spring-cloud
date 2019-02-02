@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wimetro.mapper.YlOptionConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wimetro.entity.YlOptionConfig">
+        <id column="ID" property="id" />
+        <result column="CODE_GROUP" property="codeGroup" />
+        <result column="CODE_CODE" property="codeCode" />
+        <result column="CODE_VALUE" property="codeValue" />
+        <result column="CODE_COMMENT" property="codeComment" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, CODE_GROUP, CODE_CODE, CODE_VALUE, CODE_COMMENT
+    </sql>
+
+</mapper>
