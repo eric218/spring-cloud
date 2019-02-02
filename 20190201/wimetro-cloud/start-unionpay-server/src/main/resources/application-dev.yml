@@ -1,5 +1,5 @@
 server:
-  port: 8002
+  port: 8011
 device-server:
   netty:
     port: 9999
@@ -10,7 +10,7 @@ device-server:
 spring:
   profiles: dev
   application:
-    name: start_device_server1
+    name: start-device-server
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@61.183.232.58:8521:oraletest

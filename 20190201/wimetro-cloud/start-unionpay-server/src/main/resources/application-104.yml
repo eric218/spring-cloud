@@ -9,7 +9,7 @@ device-server:
     remote.port: 56242
 spring:
   application:
-    name: start_device_server
+    name: start-device-server
   profiles: 104
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
@@ -26,4 +26,4 @@ mybatis-plus:
 eureka:
   client:
     serviceUrl:
-      defaultZone: defaultZone: http://172.16.100.104:8761/eureka/,http://172.16.100.104:8762/eureka/
+      defaultZone: http://172.16.100.104:8761/eureka/

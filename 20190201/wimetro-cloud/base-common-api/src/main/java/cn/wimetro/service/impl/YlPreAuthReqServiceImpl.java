@@ -17,8 +17,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class YlPreAuthReqServiceImpl extends ServiceImpl<YlPreAuthReqMapper, YlPreAuthReq> implements YlPreAuthReqService {
+    @Autowired
+    YlPreAuthReqMapper ylPreAuthReqMapper;
     @Override
     public int selectLine01Seq() {
-        return this.selectLine01Seq();
+        return ylPreAuthReqMapper.selectLine01Seq();
     }
 }

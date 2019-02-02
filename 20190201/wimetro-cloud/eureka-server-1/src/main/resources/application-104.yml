@@ -1,0 +1,19 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
+  profiles: 104
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://172.16.100.104:8761/eureka/
+  server:
+    #关闭自我保护
+    enable-self-preservation: false
+#    #清理间隔
+#    eviction-interval-timer-in-ms: 5000
