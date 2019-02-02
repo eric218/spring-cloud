@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base-common-api" />
         <module name="base-common-interface" />
+        <module name="biz-unionpay-api" />
         <module name="eureka-server-1" />
         <module name="eureka-server-2" />
       </profile>
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="base-common-api" options="-parameters" />
       <module name="base-common-interface" options="-parameters" />
+      <module name="biz-unionpay-api" options="-parameters" />
       <module name="eureka-server-1" options="-parameters" />
       <module name="eureka-server-2" options="-parameters" />
     </option>
