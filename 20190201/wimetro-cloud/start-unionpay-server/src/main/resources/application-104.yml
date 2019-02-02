@@ -26,4 +26,4 @@ mybatis-plus:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.100.104:8100/eureka/
+      defaultZone: defaultZone: http://172.16.100.104:8761/eureka/,http://172.16.100.104:8762/eureka/
