@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base-common-api" />
-        <module name="base_common_interface" />
         <module name="eureka-server-1" />
         <module name="eureka-server-2" />
       </profile>
@@ -16,7 +15,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="base-common-api" options="-parameters" />
-      <module name="base_common_interface" options="-parameters" />
       <module name="eureka-server-1" options="-parameters" />
       <module name="eureka-server-2" options="-parameters" />
     </option>
