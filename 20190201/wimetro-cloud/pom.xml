@@ -12,7 +12,6 @@
   <modules>
     <module>base-common-api</module>
     <module>base-common-interface</module>
-    <module>biz-match-api</module>
     <module>eureka-server-1</module>
     <module>eureka-server-2</module>
     <module>start-unionpay-server</module>

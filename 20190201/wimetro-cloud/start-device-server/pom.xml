@@ -35,7 +35,14 @@
 
         <dependency>
             <groupId>cn.wimetro</groupId>
-            <artifactId>biz-match-api</artifactId>
+            <artifactId>base-common-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.wimetro</groupId>
+            <artifactId>base-common-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>

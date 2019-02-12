@@ -11,7 +11,6 @@
         <option value="$PROJECT_DIR$/base-common-interface/pom.xml" />
         <option value="$PROJECT_DIR$/start-unionpay-server/pom.xml" />
         <option value="$PROJECT_DIR$/start-device-server/pom.xml" />
-        <option value="$PROJECT_DIR$/biz-match-api/pom.xml" />
       </list>
     </option>
   </component>
