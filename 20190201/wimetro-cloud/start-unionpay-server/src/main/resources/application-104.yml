@@ -9,7 +9,7 @@ device-server:
     remote.port: 56242
 spring:
   application:
-    name: start-device-server
+    name: start-unionpay-server
   profiles: 104
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver

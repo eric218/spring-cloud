@@ -10,7 +10,7 @@ device-server:
 spring:
   profiles: dev
   application:
-    name: start-device-server
+    name: start-unionpay-server
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@61.183.232.58:8521:oraletest
