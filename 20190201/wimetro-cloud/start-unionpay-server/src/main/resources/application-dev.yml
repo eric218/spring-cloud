@@ -1,8 +1,6 @@
 server:
   port: 8011
-device-server:
-  netty:
-    port: 9999
+unionpay-server:
   unionpay:
     localNap.ip: 192.168.1.198
     remote.ip: 101.231.114.192
