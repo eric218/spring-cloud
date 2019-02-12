@@ -26,9 +26,21 @@
         </dependency>
         <dependency>
             <groupId>cn.wimetro</groupId>
-            <artifactId>biz-unionpay-api</artifactId>
+            <artifactId>base-common-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.wimetro</groupId>
+            <artifactId>base-common-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--银联请求服务包，需要自己安装至maven-->
+        <dependency>
+            <groupId>com.upcommon</groupId>
+            <artifactId>upcommon1</artifactId>
+            <version>1.0.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
