@@ -15,9 +15,16 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 程序启动时立即执行
+ * @author wangwei
+ * @date  2019-02-12
+ * @param
+ * @return
+ **/
 @Slf4j
-@Component
-@Order(value = 1)
+//@Component
+//@Order(value = 1)
 public class UnionpayStart implements ApplicationRunner {
 
     @Value("${unionpay-server.unionpay.localNap.ip}")
