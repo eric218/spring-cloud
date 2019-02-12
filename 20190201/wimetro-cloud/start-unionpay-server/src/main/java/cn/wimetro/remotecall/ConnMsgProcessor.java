@@ -19,7 +19,7 @@ public class ConnMsgProcessor implements IMsgProcessor {
     @Override
     public void process(IMsg rspMsg) {
 
-        log.info("-----ConnMsgProcessor process--------" + ISOF.Bytes_HexStr( rspMsg.getMsgBody() ));
+        //log.info("-----ConnMsgProcessor process--------" + ISOF.Bytes_HexStr( rspMsg.getMsgBody() ));
 
         //拿到密钥
         if(("01").equals(Ylstatic.QIANDAO_FLAG)){
