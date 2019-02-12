@@ -20,11 +20,11 @@ import java.util.List;
 @Order(value = 1)
 public class UnionpayStart implements ApplicationRunner {
 
-    @Value("${device-server.unionpay.localNap.ip}")
+    @Value("${unionpay-server.unionpay.localNap.ip}")
     String localNap;
-    @Value("${device-server.unionpay.remote.ip}")
+    @Value("${unionpay-server.unionpay.remote.ip}")
     String remoteIp;
-    @Value("${device-server.unionpay.remote.port}")
+    @Value("${unionpay-server.unionpay.remote.port}")
     String remotePort;
 
     @Autowired

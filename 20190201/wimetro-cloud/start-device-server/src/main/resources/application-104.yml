@@ -1,13 +1,11 @@
 server:
-  port: 8011
-unionpay-server:
-  unionpay:
-    localNap.ip: 172.16.100.104
-    remote.ip: 9.234.3.193
-    remote.port: 56242
+  port: 8012
+device-server:
+  netty:
+    port: 9999
 spring:
   application:
-    name: start-unionpay-server
+    name: start-device-server
   profiles: 104
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
