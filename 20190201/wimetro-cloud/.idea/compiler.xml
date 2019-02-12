@@ -11,9 +11,13 @@
         <module name="eureka-server-1" />
         <module name="eureka-server-2" />
         <module name="start-device-server" />
+        <module name="start-match-server" />
         <module name="start-unionpay-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="biz-unionpay-api" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -22,6 +26,7 @@
       <module name="eureka-server-1" options="-parameters" />
       <module name="eureka-server-2" options="-parameters" />
       <module name="start-device-server" options="-parameters" />
+      <module name="start-match-server" options="-parameters" />
       <module name="start-unionpay-server" options="-parameters" />
     </option>
   </component>

@@ -1,0 +1,22 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: start-match-server
+  profiles: 104
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@172.16.100.104:1521:oraletest
+    username: iafc_dev
+    password: iafc123
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  typeAliasesPackage: cn.wimetro
+#logging:
+#  level:
+#    com.baomidou.mybatisplus.samples: debug
+#  file: /home/wimtero/yl_dev/logs/app.logs
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.16.100.104:8761/eureka/

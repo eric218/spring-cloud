@@ -16,6 +16,7 @@
     <module>eureka-server-2</module>
     <module>start-unionpay-server</module>
     <module>start-device-server</module>
+    <module>start-match-server</module>
   </modules>
 
 
