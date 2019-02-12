@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12147c2e-690a-439d-8b18-bbd91ecaf586" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/start-match-server/src/main/resources/application-104.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-match-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-match-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-match-server/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start-device-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/start-device-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/StartDeviceServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/StartDeviceServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start-match-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/start-match-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start-unionpay-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/start-unionpay-server/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start-device-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="325">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -47,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start-unionpay-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1251">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            <state relative-caret-position="163">
+              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="21" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -211,9 +203,9 @@
         <option value="$PROJECT_DIR$/start-match-server/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/start-match-server/src/main/java/cn/wimetro/StartMatchServerApplication.java" />
         <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/StartDeviceServerApplication.java" />
-        <option value="$PROJECT_DIR$/start-unionpay-server/pom.xml" />
         <option value="$PROJECT_DIR$/start-match-server/pom.xml" />
         <option value="$PROJECT_DIR$/start-device-server/pom.xml" />
+        <option value="$PROJECT_DIR$/start-unionpay-server/pom.xml" />
       </list>
     </option>
   </component>
@@ -264,36 +256,6 @@
             <path>
               <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-device-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-device-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-device-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-device-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wimetro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="start-match-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,36 +292,6 @@
               <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="start-unionpay-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-unionpay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-unionpay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-unionpay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="start-unionpay-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wimetro" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,7 +306,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549963193350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549964042323" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../spring_boot_admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
@@ -405,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.StartDeviceServerApplication">
+  <component name="RunManager" selected="Spring Boot.StartMatchServerApplication">
     <configuration name="BaseCommonInterfaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="base-common-interface" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.wimetro.BaseCommonInterfaceApplication" />
@@ -479,7 +411,7 @@
       <updated>1549073638145</updated>
       <workItem from="1549073644634" duration="19450000" />
       <workItem from="1549111218285" duration="3055000" />
-      <workItem from="1549933153289" duration="12724000" />
+      <workItem from="1549933153289" duration="13531000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1549075214398</created>
@@ -632,12 +564,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35229000" />
+    <option name="totallyTimeSpent" value="36036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2761194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -661,7 +594,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32739422" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.48329622" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.48329622" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -995,14 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/start-match-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1046,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start-device-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="325">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -1060,10 +985,18 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/start-unionpay-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1251">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+        <state relative-caret-position="163">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="60" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
