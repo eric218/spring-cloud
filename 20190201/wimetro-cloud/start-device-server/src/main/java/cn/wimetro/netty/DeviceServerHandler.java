@@ -21,8 +21,6 @@ import java.net.InetSocketAddress;
  * @return
  **/
 @Slf4j
-@Component
-@ChannelHandler.Sharable
 public class DeviceServerHandler extends ChannelInboundHandlerAdapter {
     /**
      * 收到数据时调用
