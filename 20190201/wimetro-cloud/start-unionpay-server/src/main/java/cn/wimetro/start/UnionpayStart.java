@@ -23,8 +23,8 @@ import java.util.List;
  * @return
  **/
 @Slf4j
-@Component
-@Order(value = 1)
+//@Component
+//@Order(value = 1)
 public class UnionpayStart implements ApplicationRunner {
 
     @Value("${unionpay-server.unionpay.localNap.ip}")

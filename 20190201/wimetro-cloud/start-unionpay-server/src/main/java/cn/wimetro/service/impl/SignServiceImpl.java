@@ -215,9 +215,9 @@ public class SignServiceImpl implements SignService {
         PKGResult res1 =new PKGResult();
         PKGResult res2 =new PKGResult();
 
-        WaitResult<String, MessageVO> waitResult = ConnManager.getInstance().getWaitSet().createWaitResult(vo.getKey(),5000);
+        WaitResult<String, MessageVO> waitResult = ConnManager.getInstance().getWaitSet().createWaitResult(vo.getKey(),15000);
 
-        WaitResult<String, MessageVO> waitResult2 = ConnManager.getInstance().getWaitSet().createWaitResult("QD002",5000);
+        WaitResult<String, MessageVO> waitResult2 = ConnManager.getInstance().getWaitSet().createWaitResult("QD002",15000);
 
 
         try {

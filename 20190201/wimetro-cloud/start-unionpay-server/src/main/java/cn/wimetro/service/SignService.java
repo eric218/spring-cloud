@@ -1,11 +1,13 @@
 package cn.wimetro.service;
 
+import cn.wimetro.service.unionpay.UnionPayConService;
+
 /**
  *
  * @author wangwei
  * @date  2019-02-02
  **/
-public interface SignService {
+public interface SignService{
 
     /**
      * 银联签到交易
