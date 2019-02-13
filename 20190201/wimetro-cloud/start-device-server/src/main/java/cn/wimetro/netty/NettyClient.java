@@ -13,10 +13,12 @@ import io.netty.util.AttributeKey;
 import io.netty.util.CharsetUtil;
 import lombok.extern.slf4j.Slf4j;
 import io.netty.channel.ChannelFuture;
+import org.springframework.stereotype.Service;
 
 import java.net.InetSocketAddress;
 
 @Slf4j
+@Service
 public class NettyClient {
 
     private static Bootstrap b;
@@ -54,18 +56,22 @@ public class NettyClient {
         return f.channel().attr(AttributeKey.valueOf("Attribute_key")).get();
     }
 
-    public static void main(String[] args) {
+    public void callNettyClient(String txt){
         InetSocketAddress address = new InetSocketAddress("127.0.0.1", 9999);
-        String message = "你好";
+        String message = txt;
         try {
             Object result = NettyClient.startAndWrite(address, message);
             log.info("....result:" + result);
         } catch (Exception e) {
             log.error(e.getMessage());
         } finally {
-            f.channel().close();
-            workerGroup.shutdownGracefully();
+            //f.channel().close();
+            //workerGroup.shutdownGracefully();
             log.info("Closed client!");
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }

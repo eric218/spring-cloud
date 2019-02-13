@@ -1,5 +1,6 @@
 package cn.wimetro.netty;
 
+import cn.wimetro.controller.TestController;
 import cn.wimetro.unit.SecurityUnit;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -34,7 +35,8 @@ public class DeviceServerHandler extends ChannelInboundHandlerAdapter {
             log.info("channelRead clientIP:" + clientIP);
 
             String readIn = in.toString(CharsetUtil.UTF_8);
-            log.info("channelRead 接受到数据"+readIn);
+            log.info("channelRead 接受到数据:"+readIn);
+            TestController.txts = "channelRead 接受到数据:"+readIn;
             String readType = getBizType(readIn);
             //old
             //RTC004_RES010000201812291036360063160731073143160001491600000200201812281955256224242200000052FFFA190
@@ -44,7 +46,7 @@ public class DeviceServerHandler extends ChannelInboundHandlerAdapter {
             String returnCode = getRetuenCode(readType);
             returnCode = returnCode+readIn;
             ctx.writeAndFlush(getSendByteBuf(returnCode));
-            log.info("已发送"+ returnCode);
+            log.info("已发送:"+ returnCode);
         } finally {
             // 抛弃收到的数据
             ReferenceCountUtil.release(msg);
