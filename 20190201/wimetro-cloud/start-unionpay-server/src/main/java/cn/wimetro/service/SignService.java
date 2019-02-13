@@ -1,7 +1,5 @@
 package cn.wimetro.service;
 
-import cn.wimetro.service.unionpay.UnionPayConService;
-
 /**
  *
  * @author wangwei
