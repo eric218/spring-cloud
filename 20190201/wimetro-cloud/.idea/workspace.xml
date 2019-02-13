@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12147c2e-690a-439d-8b18-bbd91ecaf586" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/start/NettyStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start-device-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/start-device-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/base-common-api/target/" />
@@ -31,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="241">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,16 +64,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="848">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1228#1549#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1233#1536#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application-104.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -84,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+            <state relative-caret-position="1117">
+              <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#863#1324#0" expanded="true" />
@@ -95,42 +115,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final.jar!/io/netty/channel/ChannelOption.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/start/NettyStart.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding>
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final.jar!/io/netty/bootstrap/AbstractBootstrap.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -175,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base-common-api/src/main/java/cn/wimetro/pos/TradeAuthRe.java" />
         <option value="$PROJECT_DIR$/base-common-api/src/main/java/cn/wimetro/pos/TradeLogin.java" />
         <option value="$PROJECT_DIR$/base-common-api/src/main/java/cn/wimetro/pos/TradeRefund.java" />
         <option value="$PROJECT_DIR$/base-common-api/src/main/java/cn/wimetro/pos/TradeResetKey.java" />
@@ -223,9 +214,10 @@
         <option value="$PROJECT_DIR$/start-unionpay-server/src/main/java/cn/wimetro/controller/UnionPayConController.java" />
         <option value="$PROJECT_DIR$/start-device-server/pom.xml" />
         <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/start/NettyStart.java" />
+        <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyClient.java" />
         <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java" />
         <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java" />
-        <option value="$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyClient.java" />
       </list>
     </option>
   </component>
@@ -320,6 +312,14 @@
               <item name="wimetro" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wimetro-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wimetro-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="start-device-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -333,7 +333,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550030296159" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550037394367" />
     <property name="last_opened_file_path" value="D:/myserver/20190115/wimetro_cloud" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
@@ -460,7 +460,7 @@
       <workItem from="1549073644634" duration="19450000" />
       <workItem from="1549111218285" duration="3055000" />
       <workItem from="1549933153289" duration="14357000" />
-      <workItem from="1550020242256" duration="8800000" />
+      <workItem from="1550020242256" duration="10194000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1549075214398</created>
@@ -665,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550027697947</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add">
+      <created>1550030323668</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1550030323668</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45662000" />
+    <option name="totallyTimeSpent" value="47056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -744,9 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/start-unionpay-server/src/main/java/cn/wimetro/remotecall/ConnMsgProtocol.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/start-unionpay-server/src/main/java/cn/wimetro/remotecall/YlNode.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -858,13 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
           <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1043,13 +1040,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.31.Final/netty-all-4.1.31.Final.jar!/io/netty/bootstrap/AbstractBootstrap.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1096,32 +1086,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        <state relative-caret-position="202">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java">
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="50">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application-104.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/DeviceServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1228#1549#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="1117">
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#863#1324#0" expanded="true" />
@@ -1130,10 +1135,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/ClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/start-device-server/src/main/java/cn/wimetro/netty/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="848">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1233#1536#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

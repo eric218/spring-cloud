@@ -26,6 +26,7 @@ public class NettyServer {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         // 用来处理已经被接收的连接
         EventLoopGroup workerGroup = new NioEventLoopGroup();
+        ChannelFuture f = null;
         log.info("准备运行端口：" + port);
 
         try {
@@ -46,13 +47,19 @@ public class NettyServer {
                     .childOption(ChannelOption.SO_KEEPALIVE, true);
 
             // 绑定端口，开始接收进来的连接
-            ChannelFuture f = b.bind(port).sync();
+            f = b.bind(port).sync();
 
             // 等待服务器socket关闭
             f.channel().closeFuture().sync();
         } catch (Exception e) {
             workerGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
+        }finally {
+            if (f != null && f.isSuccess()) {
+                log.info("Netty 启动成功..");
+            } else {
+                log.error("Netty server start up Error!");
+            }
         }
     }
 }

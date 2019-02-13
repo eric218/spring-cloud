@@ -44,6 +44,7 @@ public class DeviceServerHandler extends ChannelInboundHandlerAdapter {
 //            String crc = getCRC16(returnCode);
 //            returnCode = returnCode + crc;
             String returnCode = getRetuenCode(readType);
+            returnCode = returnCode+readIn;
             ctx.writeAndFlush(getSendByteBuf(returnCode));
             log.info("已发送"+ returnCode);
         } finally {
