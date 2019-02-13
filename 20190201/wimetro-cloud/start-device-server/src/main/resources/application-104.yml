@@ -3,6 +3,7 @@ server:
 device-server:
   netty:
     port: 9999
+    url: 127.0.0.1
 spring:
   application:
     name: start-device-server
