@@ -19,6 +19,6 @@ public class UnionPayConController implements UnionPayConService {
     @Override
     public String test1(@RequestParam("name") String name) {
         log.info("UnionPayConController104:" + name);
-        return "UnionPayConController.test1:" + name;
+        return "UnionPayConController.test2:" + name;
     }
 }
