@@ -1,5 +1,5 @@
 server:
-  port: 8011
+  port: 8013
 unionpay-server:
   unionpay:
     localNap.ip: 172.16.100.104
@@ -24,4 +24,5 @@ mybatis-plus:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.16.100.148:8761/eureka/,http://172.16.100.149:8762/eureka/
+      #104
+      defaultZone: http://172.16.100.104:8761/eureka/

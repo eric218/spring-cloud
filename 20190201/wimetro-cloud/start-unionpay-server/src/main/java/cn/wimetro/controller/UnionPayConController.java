@@ -1,7 +1,9 @@
 package cn.wimetro.controller;
 
 import cn.wimetro.service.UnionPayConService;
+import cn.wimetro.service.YlOptionConfigService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +23,8 @@ import java.net.UnknownHostException;
 public class UnionPayConController implements UnionPayConService {
     @Value("${server.port}")
     private String port ;
+    @Autowired
+    YlOptionConfigService ylOptionConfigService;
     @Override
     public String test1(@RequestParam("name") String name) {
         String host = null;
@@ -30,6 +34,7 @@ public class UnionPayConController implements UnionPayConService {
             e.printStackTrace();
         }
         log.info(host + ": " + name);
+        ylOptionConfigService.print8583Config(ylOptionConfigService.load8583Config());
         return host + ": " + name;
     }
 }

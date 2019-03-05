@@ -2,7 +2,8 @@ server:
   port: 8012
 device-server:
   netty:
-    port: 9999
+    #测试用9998
+    port: 9998
     url: 127.0.0.1
 spring:
   application:
