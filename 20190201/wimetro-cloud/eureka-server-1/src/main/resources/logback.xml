@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
-    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
-    <!--104 log -->
-    <!--<property name="LOG_HOME" value="/home/wimtero/yl_dev/logs" />-->
+    <!--定义日志文件的存储地址 可以用相对路径，也可用绝对路径-->
+    <!--unix log -->
+    <property name="LOG_HOME" value="../logs" />
     <!--本机 log -->
-    <property name="LOG_HOME" value="E:/myserver_log" />
+    <!--<property name="LOG_HOME" value="../myserver_log" />-->
     <!-- 控制台输出 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
