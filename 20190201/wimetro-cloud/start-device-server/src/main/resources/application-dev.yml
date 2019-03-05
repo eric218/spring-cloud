@@ -25,7 +25,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+      defaultZone: defaultZone: http://172.16.100.148:8761/eureka/,http://172.16.100.149:8762/eureka/
 #  instance:
 #    # 每间隔1s，向服务端发送一次心跳，证明自己依然”存活“
 #    lease-renewal-interval-in-seconds: 1

@@ -34,6 +34,14 @@ public class TestController {
         return testFeignService.test1(txts);
     }
 
+    @RequestMapping("/task1")
+    public String task1() throws Exception {
+        long start = System.currentTimeMillis();
+        String ss = testFeignService.test1("wanf");
+        long end = System.currentTimeMillis();
+        String result = ss+"  任务全部完成，总耗时：" + (end - start) + "毫秒";
+        return result;
+    }
 
     /**
      * 测试异步任务。
