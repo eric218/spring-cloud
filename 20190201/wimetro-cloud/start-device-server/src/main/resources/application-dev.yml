@@ -2,7 +2,8 @@ server:
   port: 8012
 device-server:
   netty:
-    port: 9999
+    #测试暂时用8888，生产环境用9999
+    port: 8888
     url: 127.0.0.1
 spring:
   profiles: dev
@@ -10,6 +11,10 @@ spring:
     name: start-device-server
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(description=(address_list= (address=(host=172.16.100.12)(protocol=tcp)(port=1521))(address=(host=172.16.100.13)(protocol=tcp)(port=1521))(load_balance=yes)(failover=yes))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = iafc)(FAILOVER_MODE=(TYPE = SELECT)(METHOD = BASIC)(RETIRES = 180)(DELAY = 15))))
+    username: iafc_unionpay
+    password: unionpaypro
+    type: com.alibaba.druid.pool.DruidDataSource
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
   typeAliasesPackage: cn.wimetro

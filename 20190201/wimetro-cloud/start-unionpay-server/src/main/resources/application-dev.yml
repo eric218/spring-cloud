@@ -11,6 +11,9 @@ spring:
     name: start-unionpay-server
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@61.183.232.58:8521:oraletest
+    username: iafc_dev
+    password: iafc123
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
   typeAliasesPackage: cn.wimetro
